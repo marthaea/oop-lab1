@@ -1,0 +1,24 @@
+# Base class
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+# Derived class
+class Student(Person):
+    def __init__(self, name, school):
+        super().__init__(name)
+        self.school = school
+
+# Story
+girl = Student("Aisha", "St. Mary's Girls")
+boy1 = Student("Elias", "Namiryango College")
+boy2 = Student("Michael", "Namiryango Secondary School")
+
+print(f"{girl.name} from {girl.school} wrote a letter meant for {boy1.name} at {boy1.school}.")
+print(f"But she misheard the school name and sent it to {boy2.school} instead!")
+print(f"{boy2.name} received it and replied, pretending to be {boy1.name}.")
+
+#OUTPUT
+Aisha from St. Mary's Girls wrote a letter meant for Elias at Namiryango College.
+But she misheard the school name and sent it to Namiryango Secondary School instead!
+Michael received it and replied, pretending to be Elias.
