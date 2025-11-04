@@ -25,3 +25,27 @@ rectangle = Rectangle(10, 5)
 print("Circle area:", circle.area())         # Uses Circle’s version
 print("Rectangle area:", rectangle.area())   # Uses Rectangle’s version
 
+Example 2: Vehicle, Car, Motorcycle
+class Vehicle:
+    def start(self):
+        print("Starting the engine...")
+
+    def move(self):
+        print("The vehicle is moving")
+
+class Car(Vehicle):
+    def move(self):
+        print("The car is driving on four wheels 🚗")
+
+class Motorcycle(Vehicle):
+    def move(self):
+        print("The motorcycle is zooming on two wheels 🏍️")
+
+car = Car()
+bike = Motorcycle()
+car.start()
+car.move()
+bike.start()
+bike.move()
+
+
