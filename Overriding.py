@@ -48,4 +48,27 @@ car.move()
 bike.start()
 bike.move()
 
+# Example 3: Employee, Manager, Developer
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    def get_details(self):
+        return f"Employee: {self.name}, Salary: {self.salary}"
+
+class Manager(Employee):
+    def get_details(self):
+        return f"Manager: {self.name}, Salary: {self.salary}, Oversees projects and teams."
+
+class Developer(Employee):
+    def get_details(self):
+        return f"Developer: {self.name}, Salary: {self.salary}, Writes and tests code."
+
+manager = Manager("Alice", 90000)
+developer = Developer("Bob", 70000)
+print(manager.get_details())
+print(developer.get_details())
+
+
 
