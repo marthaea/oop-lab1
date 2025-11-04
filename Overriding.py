@@ -72,3 +72,60 @@ print(developer.get_details())
 
 
 
+# Example 4: Instrument, Guitar, Piano
+class Instrument:
+    def play(self):
+        print("Playing an instrument... 🎵")
+
+class Guitar(Instrument):
+    def play(self):
+        print("Strumming the guitar strings 🎸")
+
+class Piano(Instrument):
+    def play(self):
+        print("Pressing the piano keys 🎹")
+
+guitar = Guitar()
+piano = Piano()
+guitar.play()
+piano.play()
+
+
+# Example 5: Drink, Tea, Coffee
+class Drink:
+    def prepare(self):
+        print("Preparing a drink... ☕")
+
+class Tea(Drink):
+    def prepare(self):
+        print("Boiling water, steeping tea leaves 🍵")
+
+class Coffee(Drink):
+    def prepare(self):
+        print("Brewing coffee grounds ☕")
+
+tea = Tea()
+coffee = Coffee()
+tea.prepare()
+coffee.prepare()
+
+
+# Example 6: Notification, EmailNotification, SMSNotification
+class Notification:
+    def send(self, message):
+        print(f"Sending message: {message}")
+
+class EmailNotification(Notification):
+    def send(self, message):
+        print(f"Sending email: {message}")
+
+class SMSNotification(Notification):
+    def send(self, message):
+        print(f"Sending SMS: {message}")
+
+email_notifier = EmailNotification()
+sms_notifier = SMSNotification()
+email_notifier.send("Welcome to the system!")
+sms_notifier.send("Your verification code is 1234.")
+
+
